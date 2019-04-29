@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:menuCategory="container"
+        android:title=""
+        android:id="@+id/home"
+        android:icon="@drawable/ic_house_black_silhouette_without_door"
+
+        app:showAsAction="ifRoom" />
+    <item
+        android:menuCategory="secondary"
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_magnifier"
+        android:orderInCategory="100"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search Cubes"
+        app:showAsAction="ifRoom"
+
+        tools:ignore="HardcodedText" />
+
+</menu>

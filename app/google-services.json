@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "39222191139",
+    "firebase_url": "https://inscube-3468d.firebaseio.com",
+    "project_id": "inscube-3468d",
+    "storage_bucket": "inscube-3468d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39222191139:android:4cbd03386454e1e2",
+        "android_client_info": {
+          "package_name": "com.test.aashi.inscubenewbuild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39222191139-73f4o2h5gg0l24g2gbkrj5874eu38err.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "39222191139-73f4o2h5gg0l24g2gbkrj5874eu38err.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZudKfPOSi37RXqE836vTFxkvPvGccn98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

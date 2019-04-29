@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_design"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/get_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Enter your mail ID"
+        android:background="@drawable/layout_outline_design"
+        android:padding="5dp" />
+
+
+    <Button
+        android:id="@+id/sendb"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/button_design"
+        android:textColor="@color/White"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:text="Send"/>
+
+</LinearLayout>

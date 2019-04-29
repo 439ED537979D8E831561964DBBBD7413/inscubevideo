@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="368dp"
+                    android:layout_height="351dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/loginback" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:id="@+id/text_input_layout_iname"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/regnametxt"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:hint="NAME"-->
+                        <!--android:inputType="text"-->
+
+                        <!--android:textSize="20sp" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:id="@+id/reginscube_nametxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="NAME"
+                        android:padding="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/at"
+                        android:inputType="text"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/inscubename_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5dp"
+                    android:text="email"
+                    android:textSize="16sp"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/regemailtxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="17"
+                        android:hint="EMAIL"
+                        android:inputType="textEmailAddress"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/email_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    android:layout_marginBottom="5dp"
+                    android:text="email"
+                    android:textSize="16sp"
+                     />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_input_layout_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/regpasstxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PASSWORD"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/Signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_design"
+                    android:text="SignUp"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:paddingLeft="30dp"
+                        android:text="Already have an Account?"
+                        android:textColor="@color/DarkGreyy"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/loginbackb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+
+                        android:text="LOGIN"
+                        android:textColor="#e9482b"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

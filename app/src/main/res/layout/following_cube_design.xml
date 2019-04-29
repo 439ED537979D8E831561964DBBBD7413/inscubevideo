@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/cube_img"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:scaleType="fitXY" />-->
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/career"
+            android:layout_marginBottom="3dp"
+            android:scaleType="centerCrop"
+            app:siShape="@drawable/rect1"
+            app:siSquare="true"
+            android:id="@+id/cube_img"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cube_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="name"
+        android:textAlignment="center"
+        android:textColor="@color/Storytxt" />
+
+
+</LinearLayout>

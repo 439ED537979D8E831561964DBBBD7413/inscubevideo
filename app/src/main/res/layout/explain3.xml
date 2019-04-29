@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.test.aashi.inscubenewbuild.StoryPage">
+    <LinearLayout
+        android:layout_weight="0.18"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:alpha="0.2"
+                android:background="@color/Inscube"
+                android:orientation="horizontal"
+                android:weightSum="6"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+
+                    android:id="@+id/rocket"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.75"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="4dp"
+                    tools:ignore="NestedWeights">
+
+                    <FrameLayout
+                        android:alpha="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:background="@drawable/rocket"
+                            android:layout_width="25dp"
+                            android:layout_height="22dp"/>
+
+                    </FrameLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.75"
+                    android:layout_gravity="center"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+                    <ImageView
+                        android:id="@+id/search_1"
+                        android:layout_width="25dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_magnifier" />
+                </LinearLayout>
+                <TextView
+
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/seach_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.8"
+                    android:background="@drawable/search_outline_design"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:visibility="gone">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/searchx" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/notificaton_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <ImageView
+                        android:id="@+id/notification_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/alarm" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/profile_settings"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="3dp">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:padding="3dp"
+                        android:src="@drawable/menu" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/mytransac"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="1.7"
+        android:id="@+id/transaction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:background="@drawable/explain3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <android.support.design.widget.TabLayout
+        android:visibility="gone"
+        android:alpha="0.2"
+        android:layout_weight="0.15"
+        android:gravity="bottom"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Inscube"
+        android:animateLayoutChanges="true"
+        app:tabIndicatorColor="@color/White">
+        <android.support.design.widget.TabItem
+            android:id="@+id/high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/cu"
+            />
+        <android.support.design.widget.TabItem
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/pb" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/tr" />
+    </android.support.design.widget.TabLayout>
+</LinearLayout>

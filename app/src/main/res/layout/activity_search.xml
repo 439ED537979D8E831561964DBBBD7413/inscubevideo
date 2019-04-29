@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <FrameLayout
+        android:id="@+id/transact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/Inscube"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginBottom="1dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+   <ImageView
+    android:layout_marginLeft="6dp"
+    android:layout_weight="0.03"
+    android:layout_gravity="center"
+    android:id="@+id/back"
+    android:src="@drawable/back"
+    android:layout_width="30dp"
+    android:layout_height="28dp"
+    />
+        <Spinner
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spin_search">
+        </Spinner>
+        <EditText
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginLeft="6dp"
+            android:drawableLeft="@drawable/ic_magnifier"
+            android:drawablePadding="10dp"
+            android:layout_weight="0.94"
+            android:textColor="@color/White"
+            android:textColorHint="@color/WhiteSmoke"
+            android:hint="search"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_search"/>
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_weight="0.03"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+   <android.support.v7.widget.CardView
+       app:cardCornerRadius="5dp"
+       app:cardBackgroundColor="#FFD95F33"
+       android:layout_margin="2dp"
+       android:layout_weight="1"
+       android:id="@+id/highights"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:textStyle="bold"
+           android:id="@+id/text_high"
+           android:textColor="@color/WhiteSmoke"
+           android:layout_gravity="center"
+           android:text="Highlights"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+   </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#FFD95F33"
+                android:layout_margin="2dp"
+                android:layout_weight="0.7"
+                android:id="@+id/trends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:layout_gravity="center"
+                    android:text="#"
+                    android:id="@+id/text_trends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#FFD95F33"
+                android:layout_margin="2dp"
+                android:layout_weight="1.3"
+                android:id="@+id/capture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_cap"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:layout_gravity="center"
+                    android:text="Cube Capture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#FFD95F33"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_users"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:layout_gravity="center"
+                    android:text="Users"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#FFD95F33"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:id="@+id/cube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_cube"
+                    android:textStyle="bold"
+                    android:textColor="@color/WhiteSmoke"
+                    android:layout_gravity="center"
+                    android:text="Cubes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:background="@color/WhiteSmoke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/myhighlight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+<TextView
+    android:visibility="gone"
+    android:id="@+id/names"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+</FrameLayout>
+</LinearLayout>

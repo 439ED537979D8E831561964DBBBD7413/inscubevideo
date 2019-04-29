@@ -1,0 +1,105 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:searchViewStyle" tools:ignore="NewApi">@drawable/search</item>
+    </style>
+
+    <style name="green" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#2ecc71</item>
+        <item name="colorAccent">#acecc7</item>
+
+    </style>
+    <style name="AppTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- removing the dialog's action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="tintt" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#1abc9c</item>
+        <item name="colorAccent">#8ff0dc</item>
+
+    </style>
+
+    <style name="darkblue" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#34495e</item>
+        <item name="colorAccent">#7b99b7</item>
+
+    </style>
+
+    <style name="yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#f1c40f</item>
+        <item name="colorAccent">#f9e79f</item>
+
+    </style>
+
+    <style name="lightred" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#e74c3c</item>
+        <item name="colorAccent">#f7c1bb</item>
+
+    </style>
+
+    <style name="grey" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#bdc3c7</item>
+        <item name="colorAccent">#e3e6e8</item>
+
+    </style>
+
+    <style name="purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#8e44ad</item>
+        <item name="colorAccent">#caa3db</item>
+
+    </style>
+
+    <style name="pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#fc427b</item>
+        <item name="colorAccent">#feb4ca</item>
+
+    </style>
+
+    <style name="black" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#666666</item>
+
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--popup animation-->
+
+    <style name="popup_window_animation_phone">
+        <item name="android:windowEnterAnimation">@anim/up_down</item>
+        <item name="android:windowExitAnimation">@anim/down_up</item>
+    </style>
+
+
+</resources>

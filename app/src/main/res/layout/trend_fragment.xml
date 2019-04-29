@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comming Soon"
+        android:textColor="@color/Storytxt"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/post_hash"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Inscube_match"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/trendarrow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/post_has"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Start a trend"
+                android:textColor="@color/White"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/White"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/White"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="5dp">
+
+                                    <com.mikhaellopez.circularimageview.CircularImageView
+                                        android:id="@+id/pimg"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/user" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="5dp">
+
+                                        <TextView
+                                            android:id="@+id/Story_user_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Name"
+                                            android:textColor="@color/Storytxt"
+                                            android:textSize="13sp" />
+
+                                        <TextView
+                                            android:id="@+id/Story_time"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:paddingRight="7dp"
+                                            android:text="Story | 2m ago"
+                                            android:textColor="@color/Storytxt"
+                                            android:textSize="13sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="right"
+                                        android:orientation="horizontal">
+
+
+                                        <ImageView
+                                            android:layout_width="25dp"
+                                            android:layout_height="20dp"
+                                            android:background="@null"
+                                            android:paddingBottom="2dp"
+                                            android:src="@drawable/moreoptions" />
+                                    </LinearLayout>
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/trend_recycler_view"
+                                        android:layout_width="1.4in"
+                                        android:layout_height="30dp"
+                                        android:textAlignment="center" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginTop="3dp"
+                                android:background="#E5E5E5"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/trending_txt_layout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:padding="10dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#HashTag 1"
+                                        android:textColor="#494949" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#HashTag 3"
+                                        android:textColor="#494949" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="#HashTag 3"
+                                        android:textColor="#494949" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+
+                            android:orientation="horizontal"
+                            android:padding="3dp"
+                            android:paddingTop="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|left">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/like" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/thirdicon" />
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/comment" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical">
+
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:src="@drawable/share" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/Gray" />
+
+                        <!--<android.support.v4.view.ViewPager-->
+                        <!--android:id="@+id/capture_view_pager"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="80dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:layout_marginRight="5dp" />-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="4dp">
+
+                            <TextView
+                                android:id="@+id/vowtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:text="Vow | 12"
+                                android:textColor="@color/DarkGreyy"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/cooltxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:text="Coolone | 20"
+                                android:textColor="@color/DarkGreyy"
+                                android:textSize="15sp" />
+
+
+                            <TextView
+                                android:id="@+id/amazingtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:text="Amazing | 25"
+                                android:textColor="@color/DarkGreyy"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:text=" Coolone | 20"
+                                android:textColor="@color/DarkGreyy"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="15dp"
+                                android:text="Vow | 20"
+                                android:textColor="@color/DarkGreyy"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:gravity="end"
+                            android:text="View all.."
+                            android:textColor="@color/Gray"
+                            android:textSize="13sp" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/Gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingTop="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+                <!--<com.github.rtoshiro.view.video.FullscreenVideoLayout-->
+                <!--android:id="@+id/vid"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_height="220dp" />-->
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <!--<VideoView-->
+                <!--android:id="@+id/vid"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="220dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:visibility="gone" />-->
+
+                <!--<uk.co.jakelee.vidsta.VidstaPlayer-->
+                <!--android:id="@+id/vid"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:visibility="gone"-->
+                <!--app:fullScreenButtonVisible="false" />-->
+
+
+                <ImageView
+                    android:id="@+id/vid_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@color/Black"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/vid_play_button"
+                    style="@android:style/MediaButton.Play"
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_design"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Enter the Cube Code"
+        android:textColor="@color/Storytxt"
+        android:textSize="15sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/popup_cube_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/layout_outline_design"
+        android:hint="Cube Code"
+        android:padding="5dp"
+        android:textColor="@color/Storytxt" />
+
+
+    <Button
+        android:id="@+id/popup_joinb"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_design"
+        android:text="Join"
+        android:textColor="@color/White" />
+
+
+</LinearLayout>

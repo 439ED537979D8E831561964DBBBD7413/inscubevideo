@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Inscube"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/grid_view_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/back"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="130"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Discover CUBEs"
+                android:textColor="@color/White"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="4"
+                android:layout_marginLeft="5dp"
+                android:layout_height="25dp"
+                android:background="@drawable/home" />
+        </LinearLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/Inscube"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="130"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Discover CUBEs"
+                android:textColor="@color/White"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/create_cube"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_design"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CREATE YOUR OWN SOCIAL MEDIA"
+                    android:textColor="@color/White"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/discover_cube_info"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/info_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/descover_cube_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_outline_design"
+                    android:hint="Search"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/descover_cube_search"
+                    android:padding="6dp"
+                    android:src="@drawable/lens" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+
+            <GridView
+                android:id="@+id/discovercube_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:animateLayoutChanges="true"
+                android:numColumns="3"
+                android:scrollbars="none">
+
+            </GridView>
+
+
+        </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/gotofeed"
+        app:cardCornerRadius="5dp"
+         app:cardBackgroundColor="@color/Inscube"
+        android:layout_marginBottom="30sp"
+        android:layout_gravity="center|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Go to FEED"/>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</RelativeLayout>

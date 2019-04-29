@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/White"
+android:layout_width="match_parent"
+   android:weightSum="2"
+android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="@color/Inscube"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back3"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Share with"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_weight="0.1"
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        android:text="Select cubes to share with..."
+        android:textAllCaps="true"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/Inscube"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/Grey">
+
+    </View>
+
+
+
+
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_weight="0.4"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:text="My Cubes"
+            android:textColor="@color/Storytxt"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/no_cubes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Cube Created"
+            android:textColor="@color/Storytxt"
+            android:visibility="gone" />
+        <GridView
+            android:layout_weight="2.3"
+            android:id="@+id/share_cube"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:columnWidth="80dp"
+            android:numColumns="4"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="5dp"
+            android:stretchMode="spacingWidthUniform"
+            tools:ignore="NestedWeights">
+        </GridView>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:text="View all..."
+                android:gravity="bottom|end"
+                android:id="@+id/viewa"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Storytxt"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/Storytxt">
+    </View>
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    <TextView
+        android:layout_weight="0.4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="5dp"
+        android:text="Following"
+        android:textColor="@color/Storytxt"
+        android:textStyle="bold" />
+<GridView
+    android:layout_weight="2.3"
+    android:id="@+id/share_cubes"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:columnWidth="80dp"
+    android:numColumns="4"
+    android:verticalSpacing="24dp"
+    android:horizontalSpacing="5dp"
+    android:stretchMode="spacingWidthUniform">
+
+</GridView>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginRight="10dp"
+                android:text="View all..."
+
+                android:gravity="bottom|end"
+                android:id="@+id/view_all1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Storytxt"
+                />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/share_post"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_design"
+        android:scrollbarStyle="insideInset"
+        android:text="Share"
+        android:textColor="@color/White" />
+    </LinearLayout>
+</LinearLayout>

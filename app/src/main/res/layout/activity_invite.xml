@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/myvew"
+    android:weightSum="3.3"
+    android:layout_height="match_parent"
+    tools:context="com.test.aashi.inscubenewbuild.Invite">
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Inscube"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back3"
+            android:src="@drawable/back"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Invite"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_weight="3"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <LinearLayout
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="NestedWeights">
+    <ImageView
+       android:layout_gravity="top|center"
+        android:src="@drawable/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_weight="0.2"
+        android:id="@+id/invite_text"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/Inscube"/>
+    <TextView
+        android:layout_weight="0.2"
+        android:gravity="center"
+
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:text="Send invitation link by"
+        android:layout_height="0dp"
+        android:textColor="@color/Storytxt"/>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:gravity="center"
+     android:layout_weight="4.7"
+         android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="0dp">
+
+         <android.support.v7.widget.CardView
+             android:layout_width="50dp"
+             app:cardCornerRadius="3dp"
+
+             android:layout_marginRight="8dp"
+             android:id="@+id/whatsapp"
+             android:padding="10dp"
+             android:layout_height="50dp">
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/whatsapp1"/>
+         </android.support.v7.widget.CardView>
+
+         <android.support.v7.widget.CardView
+              android:visibility="gone"
+             android:layout_width="50dp"
+             app:cardCornerRadius="3dp"
+             android:layout_marginLeft="4dp"
+             android:layout_marginRight="4dp"
+             android:id="@+id/facebook"
+             android:padding="10dp"
+             android:layout_height="50dp">
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/facebook1"/>
+
+
+
+         </android.support.v7.widget.CardView>
+
+         <android.support.v7.widget.CardView
+             android:layout_width="50dp"
+             app:cardCornerRadius="3dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:id="@+id/twitter"
+             android:padding="10dp"
+             android:layout_height="50dp">
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/twitter1"/>
+
+
+
+         </android.support.v7.widget.CardView>
+         <android.support.v7.widget.CardView
+             app:cardBackgroundColor="@color/White"
+             android:layout_width="50dp"
+             app:cardCornerRadius="3dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:id="@+id/others"
+             android:padding="10dp"
+             android:layout_height="50dp">
+             <ImageView
+
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/more"/>
+         </android.support.v7.widget.CardView>
+</LinearLayout>
+
+<TextView
+    android:gravity="center"
+    android:textStyle="bold"
+    android:text="OR"
+    android:textColor="@color/Black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+      android:layout_weight="4.7"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/to_mail"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_love_letter"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="@color/Storytxt"
+                android:text="invite mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+
+            android:id="@+id/copy_link"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_link"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="@color/Storytxt"
+                android:text="copy link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <Button
+
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+       android:layout_marginBottom="5dp"
+        android:background="@drawable/button_design"
+        android:scrollbarStyle="insideInset"
+        android:text="Skip"
+
+        android:textColor="@color/White" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

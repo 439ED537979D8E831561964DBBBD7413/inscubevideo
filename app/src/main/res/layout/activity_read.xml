@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@color/White"
+    android:layout_height="match_parent"
+    tools:context=".ReadActivity">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_weight="0.8"
+        android:id="@+id/view_pager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/gotit"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center|bottom"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/Inscube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/change"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/White"
+            android:textSize="18dp"
+            android:text="Got It!"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.TabLayout
+        android:visibility="gone"
+        android:alpha="0.2"
+        android:layout_weight="0.07"
+        android:gravity="bottom"
+        android:id="@+id/tab_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/Inscube"
+        android:animateLayoutChanges="true"
+        app:tabIndicatorColor="@color/White">
+        <android.support.design.widget.TabItem
+
+            android:id="@+id/high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/cu"
+            />
+        <android.support.design.widget.TabItem
+            android:id="@+id/capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/pb" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/trend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/tr" />
+    </android.support.design.widget.TabLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:weightSum="3"
+        android:layout_weight="0.07"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:id="@+id/tab_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:animateLayoutChanges="true">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/Inscube"
+            android:icon="@drawable/cu">
+            <ImageView
+                android:background="@drawable/cu"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:alpha="0.2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/pb" >
+            <ImageView
+                android:background="@drawable/cu"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:weightSum="3"
+        android:layout_weight="0.07"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:id="@+id/tab_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:animateLayoutChanges="true">
+        <LinearLayout
+            android:alpha="0.2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/Inscube"
+            android:icon="@drawable/cu">
+            <ImageView
+                android:background="@drawable/cu"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            >
+            <ImageView
+                android:background="@drawable/pb"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:alpha="0.2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:background="@drawable/tr"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:weightSum="3"
+        android:layout_weight="0.07"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:id="@+id/tab_layout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:animateLayoutChanges="true">
+        <LinearLayout
+            android:alpha="0.2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/Inscube"
+            android:icon="@drawable/cu">
+            <ImageView
+                android:background="@drawable/cu"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:alpha="0.2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:icon="@drawable/pb" >
+            <ImageView
+                android:background="@drawable/pb"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:background="@drawable/tr"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
